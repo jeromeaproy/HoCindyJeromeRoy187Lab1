@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.lab.hocindyjeromeroy187lab1.app.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enregistrement d'un utilisateur"
+        android:id="@+id/tvEnregis"
+        style="@style/textHeader"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/nom"
+            android:id="@+id/tvNom"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/etNom"
+            android:ems="10"
+            android:id="@+id/etNom"
+            style="@style/textDim"
+            android:layout_weight="3"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/prenom"
+            android:id="@+id/tvPrenom"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/etPrenom"
+            android:ems="10"
+            android:id="@+id/etPrenom"
+            style="@style/textDim"
+            android:layout_weight="3"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/sexe"
+            android:id="@+id/tvSexe"
+            android:textSize="16sp" />
+
+
+
+            <RadioGroup
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="3"
+
+                android:id="@+id/rgSexe">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homme"
+                android:id="@+id/radioBtnHomme"
+                android:textSize="14sp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/femme"
+                android:id="@+id/radioBtnFemme"
+                android:textSize="14sp" />
+            </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fonction"
+            android:id="@+id/tvFonction"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/commentaires"
+            android:id="@+id/tvCommentaires"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etCommentaires"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/envoyer"
+            android:id="@+id/btnEnvoyer"
+            style="@style/textBtn"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retour"
+            android:id="@+id/btnRetour"
+            style="@style/textBtn"
+            android:layout_gravity="right"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

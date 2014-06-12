@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HoCindyJeromeRoy187Lab1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="sexe">Sexe</string>
+    <string name="fonction">Fonction</string>
+    <string name="commentaires">Commentaires</string>
+    <string name="homme">Homme</string>
+    <string name="femme">Femme</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="retour">Retour</string>
+    <string name="etNom">Nom</string>
+    <string name="etPrenom">Prénom</string>
+    <string name="title_activity_lister_sexe">ListerSexe</string>
+    <string name="title_activity_lister_sexe_feminin">ListerSexeFeminin</string>
+
+</resources>
