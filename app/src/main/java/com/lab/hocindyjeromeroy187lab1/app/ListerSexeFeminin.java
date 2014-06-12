@@ -45,7 +45,7 @@ Spinner spnSexeFeminin;
         });
 
 
-        Toast.makeText(this,"sexe",Toast.LENGTH_LONG).show();
+
         trouverMembre();
 
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,listeMembresTrouves);
@@ -95,7 +95,7 @@ Spinner spnSexeFeminin;
 
                     if (sexe.equals(sexeCherche)){
                         listeMembresTrouves.add(ligne);
-                        Toast.makeText(this, "Trouve"+ligne, Toast.LENGTH_LONG).show();
+
                     }
                 }
             } catch (IOException e) {

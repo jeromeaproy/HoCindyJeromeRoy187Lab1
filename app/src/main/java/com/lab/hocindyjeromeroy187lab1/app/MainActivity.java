@@ -119,8 +119,7 @@ public class MainActivity extends Activity implements TabListener,OnItemSelected
                 intentRechercheActivity.putExtra(CLE_NOM, nom);
                 intentRechercheActivity.putExtra(CLE_PRENOM, prenom);
 
-                Toast.makeText(this,nom+" "+prenom
-                        ,Toast.LENGTH_LONG).show();
+
                 startActivity(intentRechercheActivity);
                 break;
             case 4:
@@ -234,14 +233,13 @@ public class MainActivity extends Activity implements TabListener,OnItemSelected
         String commentaire=etCommentaire.getText().toString();
         membre.setCommentaire(commentaire);
         listeMembre.add(membre);
-        Toast.makeText(MainActivity.this,"Le membre a été ajouté",Toast.LENGTH_LONG).show();
+
     }
 
     private final class CancelOnClickListener implements
             DialogInterface.OnClickListener {
         public void onClick(DialogInterface dialog, int which) {
-            Toast.makeText(getApplicationContext(), "Super, on ne termine pas",
-                    Toast.LENGTH_LONG).show();
+
         }
     }
 

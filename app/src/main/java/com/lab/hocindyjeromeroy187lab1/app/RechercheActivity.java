@@ -42,7 +42,7 @@ public class RechercheActivity extends Activity{
         trouverMembre();
 
         construireListe();
-        Toast.makeText(this, listInfoMembresTrouves.size()+"",Toast.LENGTH_LONG).show();
+
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,listInfoMembresTrouves);
        lvRecherche.setAdapter(arrayAdapter);
 
@@ -67,15 +67,14 @@ public class RechercheActivity extends Activity{
             try {
                 while((ligne = brRecherche.readLine())!=null){
                     StringTokenizer stk = new StringTokenizer(ligne,";");
-                    Toast.makeText(this,ligne,Toast.LENGTH_LONG).show();
 
                     String nomChercher=stk.nextToken();
                     String prenomChercher=stk.nextToken();
-Toast.makeText(this,nomChercher+" "+prenomChercher,Toast.LENGTH_LONG).show();
+
 
                     if (nomChercher.equals(nom)&&prenomChercher.equals(prenom)){
                         listMembresTrouves.add(ligne);
-                        Toast.makeText(this,"Membre trouvés"+ligne,Toast.LENGTH_LONG).show();
+
 
                     }
                 }

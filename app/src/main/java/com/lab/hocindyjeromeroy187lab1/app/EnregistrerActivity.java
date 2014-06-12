@@ -42,8 +42,6 @@ setContentView(R.layout.activity_enregistrer);
         {
 
 
-         //   File fichier = new File(getFilesDir(), "membres.txt");
-           // BufferedWriter buf=new BufferedWriter(new FileWriter(fichier));
 
 
 

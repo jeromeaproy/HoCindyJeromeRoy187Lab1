@@ -63,7 +63,7 @@ public class ListerSexe extends ActionBarActivity {
                 while((ligne = brRecherche.readLine())!=null){
 
 
-                    Toast.makeText(this, ligne, Toast.LENGTH_LONG).show();
+
 
                       StringTokenizer stk = new StringTokenizer(ligne,";");
 
@@ -72,7 +72,7 @@ public class ListerSexe extends ActionBarActivity {
 
                    if (sexe.equals(sexeCherche)){
                       listeMembresTrouves.add(ligne);
-                        Toast.makeText(this, "Trouve"+ligne, Toast.LENGTH_LONG).show();
+
                    }
                 }
             } catch (IOException e) {

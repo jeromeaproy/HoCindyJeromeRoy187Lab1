@@ -82,7 +82,7 @@ public class ListerActivity extends Activity {
             enTete.add("Commentaire");
             String[] informations=temp2.split(";");
             enTete.addAll(Arrays.asList(informations));
-            // String[]   informations={"bob","rgoer"};
+
             ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,enTete);
 
             gv.setAdapter(adapter);
@@ -92,8 +92,6 @@ public class ListerActivity extends Activity {
         {
             Log.i("ListerActivité", throwable.getMessage());
         }
-// Intent intent=new Intent(getApplicationContext(),com.example.myapplication.app.EnregistrerActivty.class);
-        // intent.putExtra(CLE_LISTE_MEMEBRE,listeMembre);
-        // startActivity(intent);
+
     }
 }
